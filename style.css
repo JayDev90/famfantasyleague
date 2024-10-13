@@ -1,0 +1,105 @@
+/* Base styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+  }
+  
+  /* Header styles */
+  header {
+    text-align: center;
+    background-color: #013369;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box; /* Ensure padding and width work together */
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  header h4 {
+    font-size: 1rem;
+    margin: 10px 0 0;
+  }
+  
+  /* Images in header */
+  .header-images {
+    display: flex;
+    margin-top: 10px;
+    flex-wrap: wrap; /* Allows the images to wrap on smaller screens */
+    width: 100%; /* Ensure container doesn't overflow */
+    box-sizing: border-box;
+    padding: 0 0px; /* Optional padding to add space on the sides */
+    border: 5px solid white; /* Add white border around all images */
+    border-radius: 10px; /* Optional: Add slight rounding to the border */
+  }
+  
+  .header-images img {
+    flex: 1;
+    max-width: 5%; /* Ensure images fit within the container */
+    height: auto;
+    object-fit: cover; /* Ensures images are cropped if necessary to fill space evenly */
+    border-radius: 8px; /* Adds slight rounding for a seamless, modern look */
+  }
+  
+  /* Main content styles */
+  main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  main div {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    flex: 1;
+    margin-bottom: 20px;
+  }
+  
+  /* Footer styles */
+  footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 600px) {
+    header h1 {
+      font-size: 1.5rem;
+    }
+  
+    header h4 {
+      font-size: 0.9rem;
+    }
+  
+    .header-images {
+      padding: 0; /* Remove padding to prevent extra space on smaller screens */
+    }
+  
+    .header-images img {
+      max-width: 20%; /* Allow for fewer images per row on smaller screens */
+    }
+  
+    main div {
+      padding: 10px;
+    }
+  }
+  
