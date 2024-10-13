@@ -10,7 +10,11 @@ body {
     min-height: 100vh;
     overflow-x: hidden; /* Prevent horizontal overflow */
   }
-  
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
   /* Header styles */
   header {
     text-align: center;
